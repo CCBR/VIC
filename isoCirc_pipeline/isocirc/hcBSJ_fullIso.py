@@ -493,8 +493,8 @@ def circRNA_filter_core(eval_out, bsj_motifs=['GT/AG'], bsj_xid=1, bsj_key_xid=0
             if eval_out['canoBSJMotif'].endswith(m):
                 cano = 1
                 break
-        if cano == 0:
-            return False
+        # if cano == 0:
+        #     return False
         # filter #4/5
         xid, key_xid = get_bsj_xid(eval_out['alignAroundCanoBSJ'])
         if xid > bsj_xid:
